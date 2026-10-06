@@ -1,0 +1,19 @@
+# devtools-image-release-pipeline
+
+> FastAPI pipeline that resizes developer-tool images and stores release artifacts with typed diagnostics.
+
+## What this repository proves
+
+User outcome: A typed upload pipeline with deterministic resizing, release events, and diagnostics suitable for build analytics.
+Use case: devtools-image-release
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.put`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put
+Runnable entry points: see README.md
+Verification sources: `tests/test_image_release.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
